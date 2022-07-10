@@ -2,7 +2,7 @@ import { Spin } from 'antd'
 import React, { useEffect, useState } from 'react'
 import axiosConfig from '../../../../../api'
 import { useAppDispatch, useAppSelector } from '../../../../../app/hooks'
-import { Actor2Img } from '../../../../../assets'
+import { Actor1Img, Actor2Img, Actor3Img, Actor4Img } from '../../../../../assets'
 import { LIST_ACTION_VIDEO } from '../../../../../features/VideoPageItem/redux/action'
 import { infoArticle } from '../../../../../features/VideoPageItem/redux/reducer'
 import ContainerImage from '../../../ContainerImage'
@@ -31,7 +31,7 @@ const data = [
   },
   {
     id: '1534818wpp',
-    img: Actor2Img,
+    img: Actor3Img,
     listImgDetails: [],
     desc: 'Lee Sang Yeob Doesn’t Hesitate To Protect Seo Ye Ji From A Sudden Attack In “Eve”',
     textDoc: '',
@@ -46,7 +46,7 @@ const data = [
   },
   {
     id: '1534818wpp',
-    img: Actor2Img,
+    img: Actor4Img,
     listImgDetails: [],
     desc: 'Watch: Seo Hyun Jin And Hwang In Yeop Are Serious When Filming But Know How To Have Fun Behind The Scenes Of “Why Her?”',
     textDoc: '',
@@ -76,7 +76,7 @@ const data = [
   },
   {
     id: '1534818wpp',
-    img: Actor2Img,
+    img: Actor1Img,
     listImgDetails: [],
     desc: 'Lee Sang Yeob Doesn’t Hesitate To Protect Seo Ye Ji From A Sudden Attack In “Eve”',
     textDoc: '',
