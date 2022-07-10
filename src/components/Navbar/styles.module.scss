@@ -1,0 +1,86 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.navbar {
+  overflow: hidden;
+  padding: 0.8rem 0;
+  background-color: var(--um-white);
+  top: 0;
+  z-index: 999;
+  position: fixed;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 30%);
+  border-image: linear-gradient(90deg, var(--linear-1), var(--linear-2)) 6;
+  border-top: 5px solid var(--um-black);
+  width: 100%;
+  .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    &__leftView {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .navlink {
+        display: flex;
+        justify-content: flex-start;
+        width: calc(100% - 17%);
+        a {
+          font-size: 1.83rem;
+          font-weight: 900;
+          color: var(--um-black);
+          text-transform: uppercase;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        a:hover {
+          color: var(--linear-1);
+        }
+      }
+      .ant-image {
+        width: 17%;
+      }
+    }
+    &__rightView {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.viewLogoMenu {
+  width: 13rem;
+  height: auto;
+}
+
+:global {
+  .ant-image {
+    display: flex;
+    align-items: center;
+  }
+}
+
+//for responsive
+
+@include isPc() {
+  .navbar {
+    height: 5.6rem;
+    .container {
+      padding: 0 $padding-pc;
+      a:not(:nth-child(1)) {
+        margin-left: 2rem;
+      }
+      &__leftView {
+        width: 73%;
+        .navlink{
+          // margin-left: 2rem;
+        }
+      }
+      &__rightView {
+        width: 7%;
+      }
+    }
+  }
+}

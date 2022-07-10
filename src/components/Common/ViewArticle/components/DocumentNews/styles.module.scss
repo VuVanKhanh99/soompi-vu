@@ -1,0 +1,46 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.containerArticle {
+  display: flex;
+  flex-direction: column;
+  :global {
+    .ant-image {
+      align-items: flex-start;
+    }
+  }
+  .titleNews {
+    font-size: 3.4rem;
+    font-weight: 900;
+    margin: 2.2rem 0 2.2rem 0;
+  }
+  .addInfoWriter {
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    .writer {
+      width: 13%;
+      text-align: left;
+      font-size: 1.5rem;
+      color: $color-text1;
+      margin-top:0;
+      span{
+        color:var(--linear-1);
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include isPc() {
+  .containerArticle {
+    width: 65.5%;
+    img {
+      background-size: cover;
+      width: 84rem;
+      height: 50rem;
+    }
+  }
+}

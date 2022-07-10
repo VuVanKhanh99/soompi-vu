@@ -1,0 +1,52 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.containerNews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .ant-image {
+    width: 100%;
+  }
+  img {
+    background-size: cover;
+    width: 100%;
+    cursor: pointer;
+  }
+  .bottomView {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    .titleNews {
+      margin-top: 0.8rem;
+      font-size: 1.54rem;
+      font-weight: 750;
+      letter-spacing: normal;
+      width: 64%;
+      cursor: pointer;
+      &:hover{
+        color:var(--linear-1);
+      }
+    }
+    .timeView {
+      width: 30%;
+      margin-top: 1.2rem;
+      font-size: 1.15rem;
+      text-align: right;
+      font-weight: 600;
+      color:rgba(0,0,0,0.4);
+    }
+  }
+}
+
+@include isPc() {
+  :global {
+    .containerNews {
+      width: calc((100% / 3) - 4rem);
+    }
+  }
+  img {
+    height: 24rem;
+  }
+}

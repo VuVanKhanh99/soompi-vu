@@ -1,0 +1,19 @@
+$font-main: 'Lato', sans-serif;
+$font1: 'Oswald', sans-serif;
+
+$background-tag1: #ff3e8e;
+$color-text1: rgba(0, 0, 0, 0.4);
+
+$mobile-min-width: 240px;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1199px;
+$pc-min-width: 1200px;
+$padding-mobile: 0.4rem;
+$padding-tablet: 10rem;
+$padding-pc: 14rem;
+$padding-desktop: 18rem;
+
+$media-mobile: 'screen and (min-width: 240px) and (max-width: 767px)';
+$media-tablet: 'screen and (min-width: 768px) and (max-width: 1199px)';
+$media-pc: 'screen and (min-width: 1200px)';

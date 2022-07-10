@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.topBar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.4rem;
+  max-height: 2.17rem;
+  .tagNewsRelated {
+    display: flex;
+    flex-direction: row;
+    background-color: $background-tag1;
+    color: var(--um-white);
+    padding: 2.8px 5.5px;
+    margin-right: 1.4rem;
+    border-radius: 3.4px;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($background-tag1, 0.6);
+    }
+  }
+  .timeView {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: $color-text1;
+    font-size: 1.27rem;
+    font-weight: 520;
+    letter-spacing: normal;
+  }
+}

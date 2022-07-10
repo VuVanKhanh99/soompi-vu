@@ -1,0 +1,17 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.containerVideo {
+  //  box-sizing: inherit;
+  display: grid;
+}
+
+//for responsive
+
+@include isPc() {
+  .containerVideo {
+    max-width: 1390px;
+    padding: 0 $padding-pc;
+  }
+}
+

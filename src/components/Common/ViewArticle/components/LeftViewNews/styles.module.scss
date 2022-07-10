@@ -1,0 +1,46 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/global';
+
+.sideBarArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32.7%;
+  h2.sectionTitle {
+    margin-top: 2rem;
+    margin-bottom: 1.1rem;
+    font-family: $font1;
+    font-size: 4rem;
+    color: var(--um-black);
+    font-weight: 500;
+    &:after {
+      content: ' ';
+      background-image: url('https://0.soompi.io/soompi-web/gradient-slash.724ca758f0a77055547d5a6b5a941d09.svg');
+      background-repeat: no-repeat;
+      height: 1.6rem;
+      padding: 8px 0 5px 5px;
+      margin: -4px 0 2px 0;
+      display: block;
+    }
+  }
+  .listArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    width: 100%;
+    .thumbnailWrapper {
+      display: flex;
+      justify-content: flex-start;
+      &:not(:nth-child(1)) {
+        margin-top: 2.2rem;
+      }
+    }
+  }
+}
+:global {
+  .ant-design img{
+    display: block;
+  }
+}

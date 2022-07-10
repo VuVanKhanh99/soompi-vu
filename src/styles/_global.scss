@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;800&family=Open+Sans:wght@500&display=swap');
+@import 'mixins';
+
+:root {
+  --um-white: #ffffff;
+  --um-black: #000000;
+  --um-dark: #1c1c1c;
+  --linear-1: #12bdfd;
+  --linear-2: #9f79f3;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}

@@ -1,0 +1,5 @@
+export {default as UptempoIcon} from './uptempoGlobal.png'
+export {default as ErrorPageIcon} from './errorPage.jpg'
+export {default as Icon404} from './404.png'
+export {default as LogoIcon} from './logoIcon.png'
+export {default as TopicDaily} from './topicDaily.jpg'

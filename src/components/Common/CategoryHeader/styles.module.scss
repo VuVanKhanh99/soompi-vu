@@ -1,0 +1,16 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.ant-image {
+  background-size: cover;
+}
+.imgTopic {
+  width: 100%;
+}
+//for responsive
+
+@include isPc() {
+  .imgTopic {
+    height: 36rem;
+  }
+}

@@ -1,0 +1,56 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/global';
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 15rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  .dropbtn {
+    color: var(--um-black);
+    border: none;
+    text-align: left;
+    padding-top: 8px;
+    width: 100%;
+    font-size: 1.74rem;
+    font-weight: 600;
+    background-color: transparent;
+    .dropIcon {
+      margin-left: 1.3rem;
+      color: red;
+    }
+  }
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: var(--um-white);
+    min-width: 24rem;
+    z-index: 999;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    p {
+      box-sizing: border-box;
+      padding: 14px 17px;
+      color: black;
+      text-decoration: none;
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 500;
+      width: 100%;
+      &:hover {
+        color: var(--um-white);
+        background-image: linear-gradient(90deg, var(--linear-1), var(--linear-2));
+      }
+    }
+  }
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+@include isPc() {
+  .dropdown {
+  }
+}

@@ -1,0 +1,23 @@
+@mixin isMobile($min-width: $mobile-min-width, $max-width: $mobile-max-width) {
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin isTablet($min-width: $tablet-min-width, $max-width: $tablet-max-width) {
+    @media screen and (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+    }
+}
+
+@mixin isTabletandMobile($min-width: $mobile-min-width, $max-width:$tablet-max-width){
+    @media screen and (min-width:$min-width) and (max-width: $max-width){
+        @content;
+    }
+}
+
+@mixin isPc($min-width: $pc-min-width){
+  @media screen and (min-width: $min-width){
+    @content;
+  }
+}
