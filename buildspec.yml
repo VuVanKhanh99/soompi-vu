@@ -1,15 +1,13 @@
 version: 0.2
-env: 
-  REACT_APP_ENDPOINT: ""
+
 phases:
-  pre_build:
-    install:
-      runtime-versions:
-      nodejs: 14
+  install:
+    runtime-versions:
+      nodejs: 16
+   
     commands:
         # install npm
         - npm install -f
-        - cp .env
        
   build:
     commands:
@@ -20,8 +18,11 @@ artifacts:
   # include all files required to run application
   # notably excluded is node_modules, as this will cause overwrite error on deploy
   files:
-    - '**/*'
-  base-directory: build
+    - public/**/*
+    - src/**/*
+    - package.json
+    - scripts/**/*
+  #  - appspec.yml
 cache:
   paths:
-    - './node_modules/**/*'
+    - './node_modules/**/'
