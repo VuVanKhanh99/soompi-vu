@@ -1,6 +1,5 @@
-import React, { ReactNode, useState } from 'react'
+import React, { useState } from 'react'
 import { typeSortNew } from '../../../configs'
-import { DownOutlined } from '@ant-design/icons'
 import { FaSortDown } from 'react-icons/fa'
 import styles from './styles.module.scss'
 
