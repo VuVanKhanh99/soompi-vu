@@ -1,12 +1,12 @@
-version: 0.2
+version: 0.1
 env:
   REACT_APP_ENDPOINT: ""
 phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install -f
-      - cp .env.development .env.production.local
+      - npm install
+      - cp .env.production .env.production.local
   build:
     commands:
       - echo Build started on `date`      
