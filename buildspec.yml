@@ -2,10 +2,14 @@ version: 0.2
 env:
   REACT_APP_ENDPOINT: ""
 phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - npm install -f
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - npm install -f
       - cp .env.development .env.production.local
   build:
     commands:
